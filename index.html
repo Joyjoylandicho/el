@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet" />
+  <title>pihartsday</title>
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      background-color: #9B7F5B;
+    }
+    .container {
+      position: relative;
+      height: 100vh;
+    }
+    
+    .image  {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      animation: slideIn 2s forwards;
+      opacity: 0;
+      width: 100%;
+      height: auto;
+    }
+    .text {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      animation: slideUp 2s forwards;
+      opacity: 0;
+      font-family: "Protest Riot", Arial;
+      font-size: 20px;
+      text-align: center;
+      color: black;
+    
+    
+    
+    }
+    @keyframes slideIn {
+      from {
+        top: -100%;
+      }
+      to {
+        top: 15%;
+        opacity: 1;
+      }
+    }
+    @keyframes slideUp {
+      from {
+        bottom: -100%;
+      }
+      to {
+        bottom: 25%;
+        opacity: 1;
+      }
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="cat-0.jpg" alt="Image" class="image">
+    <p class="text">Happy Heart's Day!</p>
+  </div>
+</body>
+</html>
